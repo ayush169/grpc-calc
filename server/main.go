@@ -5,7 +5,6 @@ import (
 	"fmt"
 	proto "grpc-calc/proto"
 	"net"
-	"time"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
@@ -32,7 +31,25 @@ func main() {
 }
 
 func (s *server) Add(ctx context.Context, req *proto.AddRequest) (*proto.AddResponse, error) {
-	time.Sleep(2 * time.Second)
+	// time.Sleep(2 * time.Second)
 	result := req.A + req.B
 	return &proto.AddResponse{Result: result}, nil
+}
+
+func (s *server) Subtract(ctx context.Context, req *proto.SubtractRequest) (*proto.SubtractResponse, error) {
+	result := req.A - req.B
+	return &proto.SubtractResponse{Result: result}, nil
+}
+
+func (s *server) Multiply(ctx context.Context, req *proto.MultiplyRequest) (*proto.MultiplyResponse, error) {
+	result := req.A * req.B
+	return &proto.MultiplyResponse{Result: result}, nil
+}
+
+func (s *server) Divide(ctx context.Context, req *proto.DivideRequest) (*proto.DivideResponse, error) {
+	if req.B == 0 {
+		return nil, fmt.Errorf("cannot divide by zero")
+	}
+	result := req.A / req.B
+	return &proto.DivideResponse{Result: result}, nil
 }

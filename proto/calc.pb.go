@@ -122,6 +122,312 @@ func (x *AddResponse) GetResult() int32 {
 	return 0
 }
 
+type SubtractRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	A int32 `protobuf:"varint,1,opt,name=a,proto3" json:"a,omitempty"`
+	B int32 `protobuf:"varint,2,opt,name=b,proto3" json:"b,omitempty"`
+}
+
+func (x *SubtractRequest) Reset() {
+	*x = SubtractRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SubtractRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SubtractRequest) ProtoMessage() {}
+
+func (x *SubtractRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SubtractRequest.ProtoReflect.Descriptor instead.
+func (*SubtractRequest) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{2}
+}
+
+func (x *SubtractRequest) GetA() int32 {
+	if x != nil {
+		return x.A
+	}
+	return 0
+}
+
+func (x *SubtractRequest) GetB() int32 {
+	if x != nil {
+		return x.B
+	}
+	return 0
+}
+
+type SubtractResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Result int32 `protobuf:"varint,1,opt,name=result,proto3" json:"result,omitempty"`
+}
+
+func (x *SubtractResponse) Reset() {
+	*x = SubtractResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[3]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SubtractResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SubtractResponse) ProtoMessage() {}
+
+func (x *SubtractResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[3]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SubtractResponse.ProtoReflect.Descriptor instead.
+func (*SubtractResponse) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{3}
+}
+
+func (x *SubtractResponse) GetResult() int32 {
+	if x != nil {
+		return x.Result
+	}
+	return 0
+}
+
+type MultiplyRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	A int32 `protobuf:"varint,1,opt,name=a,proto3" json:"a,omitempty"`
+	B int32 `protobuf:"varint,2,opt,name=b,proto3" json:"b,omitempty"`
+}
+
+func (x *MultiplyRequest) Reset() {
+	*x = MultiplyRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[4]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MultiplyRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MultiplyRequest) ProtoMessage() {}
+
+func (x *MultiplyRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[4]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MultiplyRequest.ProtoReflect.Descriptor instead.
+func (*MultiplyRequest) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{4}
+}
+
+func (x *MultiplyRequest) GetA() int32 {
+	if x != nil {
+		return x.A
+	}
+	return 0
+}
+
+func (x *MultiplyRequest) GetB() int32 {
+	if x != nil {
+		return x.B
+	}
+	return 0
+}
+
+type MultiplyResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Result int32 `protobuf:"varint,1,opt,name=result,proto3" json:"result,omitempty"`
+}
+
+func (x *MultiplyResponse) Reset() {
+	*x = MultiplyResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[5]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MultiplyResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MultiplyResponse) ProtoMessage() {}
+
+func (x *MultiplyResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[5]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MultiplyResponse.ProtoReflect.Descriptor instead.
+func (*MultiplyResponse) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *MultiplyResponse) GetResult() int32 {
+	if x != nil {
+		return x.Result
+	}
+	return 0
+}
+
+type DivideRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	A int32 `protobuf:"varint,1,opt,name=a,proto3" json:"a,omitempty"`
+	B int32 `protobuf:"varint,2,opt,name=b,proto3" json:"b,omitempty"`
+}
+
+func (x *DivideRequest) Reset() {
+	*x = DivideRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *DivideRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DivideRequest) ProtoMessage() {}
+
+func (x *DivideRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DivideRequest.ProtoReflect.Descriptor instead.
+func (*DivideRequest) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *DivideRequest) GetA() int32 {
+	if x != nil {
+		return x.A
+	}
+	return 0
+}
+
+func (x *DivideRequest) GetB() int32 {
+	if x != nil {
+		return x.B
+	}
+	return 0
+}
+
+type DivideResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Result int32 `protobuf:"varint,1,opt,name=result,proto3" json:"result,omitempty"`
+}
+
+func (x *DivideResponse) Reset() {
+	*x = DivideResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calc_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *DivideResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DivideResponse) ProtoMessage() {}
+
+func (x *DivideResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calc_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DivideResponse.ProtoReflect.Descriptor instead.
+func (*DivideResponse) Descriptor() ([]byte, []int) {
+	return file_calc_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *DivideResponse) GetResult() int32 {
+	if x != nil {
+		return x.Result
+	}
+	return 0
+}
+
 var File_calc_proto protoreflect.FileDescriptor
 
 var file_calc_proto_rawDesc = []byte{
@@ -130,11 +436,37 @@ var file_calc_proto_rawDesc = []byte{
 	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x61, 0x12, 0x0c, 0x0a, 0x01, 0x62, 0x18, 0x02, 0x20,
 	0x01, 0x28, 0x05, 0x52, 0x01, 0x62, 0x22, 0x25, 0x0a, 0x0b, 0x41, 0x64, 0x64, 0x52, 0x65, 0x73,
 	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18,
-	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x30, 0x0a,
-	0x0a, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x12, 0x22, 0x0a, 0x03, 0x41,
-	0x64, 0x64, 0x12, 0x0b, 0x2e, 0x41, 0x64, 0x64, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a,
-	0x0c, 0x2e, 0x41, 0x64, 0x64, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42,
-	0x04, 0x5a, 0x02, 0x2e, 0x2f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x2d, 0x0a,
+	0x0f, 0x53, 0x75, 0x62, 0x74, 0x72, 0x61, 0x63, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
+	0x12, 0x0c, 0x0a, 0x01, 0x61, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x61, 0x12, 0x0c,
+	0x0a, 0x01, 0x62, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x62, 0x22, 0x2a, 0x0a, 0x10,
+	0x53, 0x75, 0x62, 0x74, 0x72, 0x61, 0x63, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05,
+	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x2d, 0x0a, 0x0f, 0x4d, 0x75, 0x6c, 0x74,
+	0x69, 0x70, 0x6c, 0x79, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x0c, 0x0a, 0x01, 0x61,
+	0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x61, 0x12, 0x0c, 0x0a, 0x01, 0x62, 0x18, 0x02,
+	0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x62, 0x22, 0x2a, 0x0a, 0x10, 0x4d, 0x75, 0x6c, 0x74, 0x69,
+	0x70, 0x6c, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x72,
+	0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72, 0x65, 0x73,
+	0x75, 0x6c, 0x74, 0x22, 0x2b, 0x0a, 0x0d, 0x44, 0x69, 0x76, 0x69, 0x64, 0x65, 0x52, 0x65, 0x71,
+	0x75, 0x65, 0x73, 0x74, 0x12, 0x0c, 0x0a, 0x01, 0x61, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52,
+	0x01, 0x61, 0x12, 0x0c, 0x0a, 0x01, 0x62, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x01, 0x62,
+	0x22, 0x28, 0x0a, 0x0e, 0x44, 0x69, 0x76, 0x69, 0x64, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
+	0x73, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01,
+	0x28, 0x05, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0xc3, 0x01, 0x0a, 0x0a, 0x43,
+	0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x12, 0x22, 0x0a, 0x03, 0x41, 0x64, 0x64,
+	0x12, 0x0b, 0x2e, 0x41, 0x64, 0x64, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x0c, 0x2e,
+	0x41, 0x64, 0x64, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x31, 0x0a,
+	0x08, 0x53, 0x75, 0x62, 0x74, 0x72, 0x61, 0x63, 0x74, 0x12, 0x10, 0x2e, 0x53, 0x75, 0x62, 0x74,
+	0x72, 0x61, 0x63, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x11, 0x2e, 0x53, 0x75,
+	0x62, 0x74, 0x72, 0x61, 0x63, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
+	0x12, 0x31, 0x0a, 0x08, 0x4d, 0x75, 0x6c, 0x74, 0x69, 0x70, 0x6c, 0x79, 0x12, 0x10, 0x2e, 0x4d,
+	0x75, 0x6c, 0x74, 0x69, 0x70, 0x6c, 0x79, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x11,
+	0x2e, 0x4d, 0x75, 0x6c, 0x74, 0x69, 0x70, 0x6c, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
+	0x65, 0x22, 0x00, 0x12, 0x2b, 0x0a, 0x06, 0x44, 0x69, 0x76, 0x69, 0x64, 0x65, 0x12, 0x0e, 0x2e,
+	0x44, 0x69, 0x76, 0x69, 0x64, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x0f, 0x2e,
+	0x44, 0x69, 0x76, 0x69, 0x64, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
+	0x42, 0x04, 0x5a, 0x02, 0x2e, 0x2f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -149,16 +481,28 @@ func file_calc_proto_rawDescGZIP() []byte {
 	return file_calc_proto_rawDescData
 }
 
-var file_calc_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_calc_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_calc_proto_goTypes = []any{
-	(*AddRequest)(nil),  // 0: AddRequest
-	(*AddResponse)(nil), // 1: AddResponse
+	(*AddRequest)(nil),       // 0: AddRequest
+	(*AddResponse)(nil),      // 1: AddResponse
+	(*SubtractRequest)(nil),  // 2: SubtractRequest
+	(*SubtractResponse)(nil), // 3: SubtractResponse
+	(*MultiplyRequest)(nil),  // 4: MultiplyRequest
+	(*MultiplyResponse)(nil), // 5: MultiplyResponse
+	(*DivideRequest)(nil),    // 6: DivideRequest
+	(*DivideResponse)(nil),   // 7: DivideResponse
 }
 var file_calc_proto_depIdxs = []int32{
 	0, // 0: Calculator.Add:input_type -> AddRequest
-	1, // 1: Calculator.Add:output_type -> AddResponse
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	2, // 1: Calculator.Subtract:input_type -> SubtractRequest
+	4, // 2: Calculator.Multiply:input_type -> MultiplyRequest
+	6, // 3: Calculator.Divide:input_type -> DivideRequest
+	1, // 4: Calculator.Add:output_type -> AddResponse
+	3, // 5: Calculator.Subtract:output_type -> SubtractResponse
+	5, // 6: Calculator.Multiply:output_type -> MultiplyResponse
+	7, // 7: Calculator.Divide:output_type -> DivideResponse
+	4, // [4:8] is the sub-list for method output_type
+	0, // [0:4] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -194,6 +538,78 @@ func file_calc_proto_init() {
 				return nil
 			}
 		}
+		file_calc_proto_msgTypes[2].Exporter = func(v any, i int) any {
+			switch v := v.(*SubtractRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calc_proto_msgTypes[3].Exporter = func(v any, i int) any {
+			switch v := v.(*SubtractResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calc_proto_msgTypes[4].Exporter = func(v any, i int) any {
+			switch v := v.(*MultiplyRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calc_proto_msgTypes[5].Exporter = func(v any, i int) any {
+			switch v := v.(*MultiplyResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calc_proto_msgTypes[6].Exporter = func(v any, i int) any {
+			switch v := v.(*DivideRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calc_proto_msgTypes[7].Exporter = func(v any, i int) any {
+			switch v := v.(*DivideResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
@@ -201,7 +617,7 @@ func file_calc_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_calc_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   2,
+			NumMessages:   8,
 			NumExtensions: 0,
 			NumServices:   1,
 		},

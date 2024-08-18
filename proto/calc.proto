@@ -4,6 +4,9 @@ option go_package = "./";
 
 service Calculator {
   rpc Add(AddRequest) returns (AddResponse) {}
+  rpc Subtract(SubtractRequest) returns (SubtractResponse) {}
+  rpc Multiply(MultiplyRequest) returns (MultiplyResponse) {}
+  rpc Divide(DivideRequest) returns (DivideResponse) {}
 }
 
 message AddRequest {
@@ -14,3 +17,31 @@ message AddRequest {
 message AddResponse {
   int32 result = 1;
 }
+
+message SubtractRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message SubtractResponse {
+  int32 result = 1;
+}
+
+message MultiplyRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message MultiplyResponse {
+  int32 result = 1;
+}
+
+message DivideRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message DivideResponse {
+  int32 result = 1;
+}
+
